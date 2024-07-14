@@ -7,7 +7,7 @@ interface A4PaginatedContentProps {
 const A4PaginatedContent: React.FC<A4PaginatedContentProps> = ({ content }) => {
   const [pages, setPages] = useState<string[]>([]);
 
-  const wordsPerPage = 500;
+  const wordsPerPage = 400;
   const pageRefs = useRef<(HTMLDivElement | null)[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -46,7 +46,7 @@ const A4PaginatedContent: React.FC<A4PaginatedContentProps> = ({ content }) => {
         return (
           <div key={pageIndex} ref={(el) => (pageRefs.current[pageIndex] = el)}>
             <div className="w-[210mm] h-[297mm] bg-white border relative border-solid border-black shadow-md m-4 px-12 py-20 overflow-hidden text-justify">
-              <div className="text-sm leading-6">
+              <div className="text-sm leading-7">
                 {rows.map((row, rowIndex) => (
                   <React.Fragment key={rowIndex}>
                     <p>{row.join(" ")}</p>
