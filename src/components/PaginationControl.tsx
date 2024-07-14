@@ -20,7 +20,7 @@ const PaginationControls: React.FC<PaginationControlsProps> = ({
       >
         Previous
       </button>
-      <span className="text-black">
+      <span className="text-white">
         Page {currentPage} of {totalPages}
       </span>
       <button
