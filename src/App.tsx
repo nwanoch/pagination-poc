@@ -4,9 +4,6 @@ import A4PaginatedContent from "./components/Pagination";
 const YourMainPage: React.FC = () => {
   return (
     <div className=" mx-auto">
-      <h1 className="text-2xl font-bold text-center m-10 mb-4 ">
-        A4 Pagination proof of concept
-      </h1>
       <A4PaginatedContent content={content} />
     </div>
   );
