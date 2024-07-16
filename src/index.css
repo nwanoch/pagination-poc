@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.no-focus-outline {
+    outline: none !important;
+    overflow: hidden !important;
+    max-height: 280mm !important;
+  }
+  
+  .ProseMirror:focus {
+    outline: none !important;
+    overflow: hidden !important;
+    max-height: 280mm !important;
+  }
+  
